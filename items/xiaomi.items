@@ -29,3 +29,18 @@ Switch Xi_FA_Smoke_Detected <alarm> { channel="mihome:smoke:158d0004119b7b:alarm
 String Xi_FA_Status <status> { channel="mihome:smoke:158d0004119b7b:status" }
 Number Xi_FA_Battery <battery> { channel="mihome:smoke:158d0004119b7b:batteryLevel" }
 Switch Xi_FA_BatteryLow <energy> { channel="mihome:smoke:158d0004119b7b:lowBattery" }
+
+// Xiaomi Air Purifier
+Number XAIR_humidity 			"Humidity [%d %%]" 								{channel="miio:generic:112C7F75:humidity"}
+Number XAIR_temp 				"Temp [%2.1f °C]" 	<temperature>				{channel="miio:generic:112C7F75:temperature"}
+String XAIR_mode				"Mode Air Purifier"								{channel="miio:generic:112C7F75:mode"}
+Switch XAIR_power				"Power Air Purfier"								{channel="miio:generic:112C7F75:power"}
+Number XAIR_airquality			"PPM 2.5"										{channel="miio:generic:112C7F75:aqi"}
+Number XAIR_avgairquality		"AVG PPM 2.5"									{channel="miio:generic:112C7F75:averageaqi"}
+Switch XAIR_autodetect			"Air Autodetect" 								{channel="miio:generic:112C7F75:act_det"}
+Number XAIR_filterlife			"Filter Life Time [%d %%]"						{channel="miio:generic:112C7F75:filterlife"}
+Number XAIR_motorspeed			"RPM Motor"										{channel="miio:generic:112C7F75:motorspeed"}
+Number XAIR_runtime				"Run Time [%d sec]"								{channel="miio:generic:112C7F75:usedhours"}
+Number XAIR_favlevel			"Manual Level"									{channel="miio:generic:112C7F75:favoritelevel"}
+Number XAIR_purifiedvol			"Purified"										{channel="miio:generic:112C7F75:purifyvolume"}
+String XAIR_commandchannel		"Manual Command Channel XIAOMI"					{channel="miio:generic:112C7F75:actions#commands"}
