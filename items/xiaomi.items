@@ -1,0 +1,31 @@
+// Xiaomi Temperature Sensor - KIDS ROOM
+Number Xi_Kids_Temperature <temperature> { channel="mihome:sensor_weather_v1:158d000410c77c:temperature" }
+Number Xi_Kids_Humidity <humidity> { channel="mihome:sensor_weather_v1:158d000410c77c:humidity" }
+Number Xi_Kids_Pressure <battery> { channel="mihome:sensor_weather_v1:158d000410c77c:pressure" }
+Number Xi_Kids_Battery <battery> { channel="mihome:sensor_weather_v1:158d000410c77c:batteryLevel" }
+Switch Xi_Kids_BatteryLow <energy> { channel="mihome:sensor_weather_v1:158d000410c77c:lowBattery" }
+
+// Xiaomi Temperature Sensor - KITCHEN ROOM
+Number Xi_Kitchen_Temperature <temperature> { channel="mihome:sensor_weather_v1:158d00044db3a0:temperature" }
+Number Xi_Kitchen_Humidity <humidity> { channel="mihome:sensor_weather_v1:158d00044db3a0:humidity" }
+Number Xi_Kitchen_Pressure <battery> { channel="mihome:sensor_weather_v1:158d00044db3a0:pressure" }
+Number Xi_Kitchen_Battery <battery> { channel="mihome:sensor_weather_v1:158d00044db3a0:batteryLevel" }
+Switch Xi_Kitchen_BatteryLow <energy> { channel="mihome:sensor_weather_v1:158d00044db3a0:lowBattery" }
+
+// Xiaomi Button - DOOR BELL
+Number Xi_Switch_Battery <battery> { channel="mihome:sensor_switch_aq2:158d00044b636d:batteryLevel" }
+Switch Xi_Switch_BatteryLow <energy> { channel="mihome:sensor_switch_aq2:158d00044b636d:lowBattery" }
+
+// Xiaomi Temperature Sensor - LIVING ROOM
+Number Xi_Living_Temperature <temperature> { channel="mihome:sensor_weather_v1:158d000303fea2:temperature" }
+Number Xi_Living_Humidity <humidity> { channel="mihome:sensor_weather_v1:158d000303fea2:humidity" }
+Number Xi_Living_Pressure <battery> { channel="mihome:sensor_weather_v1:158d000303fea2:pressure" }
+Number Xi_Living_Battery <battery> { channel="mihome:sensor_weather_v1:158d000303fea2:batteryLevel" }
+Switch Xi_Living_BatteryLow <energy> { channel="mihome:sensor_weather_v1:158d000303fea2:lowBattery" }
+
+// Xiaomi Fire Alarm
+Number Xi_FA_Density <density> { channel="mihome:smoke:158d0004119b7b:density" }
+Switch Xi_FA_Smoke_Detected <alarm> { channel="mihome:smoke:158d0004119b7b:alarm" }
+String Xi_FA_Status <status> { channel="mihome:smoke:158d0004119b7b:status" }
+Number Xi_FA_Battery <battery> { channel="mihome:smoke:158d0004119b7b:batteryLevel" }
+Switch Xi_FA_BatteryLow <energy> { channel="mihome:smoke:158d0004119b7b:lowBattery" }
