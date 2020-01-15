@@ -1,0 +1,1 @@
+Switch Switch_30A "30A Relay Control" { channel="mqtt:topic:879dccc5:relay30a" }
